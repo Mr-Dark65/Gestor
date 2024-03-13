@@ -8,12 +8,16 @@ package Principal;
  *
  * @author ASUS
  */
-public class Persona {
+public class Estudiante {
     private String nombre;
     private String apellido;
-    private String ocupacion;
 
-    public Persona() {
+    public Estudiante() {
+    }
+
+    public Estudiante(String nombre, String apellido) {
+        this.nombre = nombre;
+        this.apellido = apellido;
     }
 
     public String getNombre() {
@@ -32,13 +36,7 @@ public class Persona {
         this.apellido = apellido;
     }
 
-    public String getOcupacion() {
-        return this.ocupacion;
-    }
-
-    public void setOcupacion(String ocupacion) {
-        this.ocupacion = ocupacion;
-    }
+   
     
     
 }

@@ -14,8 +14,10 @@ public class Almacen {
 
     private static Almacen instance;
 
-    public ArrayList<Persona> persona = new ArrayList<>();
-    public ArrayList<calificaciones> califica = new ArrayList<>();
+    public ArrayList<Estudiante> estudiante = new ArrayList<>();
+    public ArrayList<Docente> docente = new ArrayList<>();
+    public ArrayList<Materias> materia = new ArrayList<>();
+
     private Almacen() {
     }
 

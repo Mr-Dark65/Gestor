@@ -8,19 +8,27 @@ package Principal;
  *
  * @author ASUS
  */
-public class Calificaciones extends Materias {
-    private Materias materia;
-    private String fecha;
+public class Docente {
+
     private String nombre;
     private String apellido;
-    private float calificacion;
+    private String materia;
 
-    public String getFecha() {
-        return this.fecha;
+    public Docente() {
     }
 
-    public void setFecha(String fecha) {
-        this.fecha = fecha;
+    public Docente(String nombre, String apellido, String materia) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.materia = materia;
+    }
+
+    public String getMateria() {
+        return this.materia;
+    }
+
+    public void setMateria(String materia) {
+        this.materia = materia;
     }
 
     public String getNombre() {
@@ -38,13 +46,4 @@ public class Calificaciones extends Materias {
     public void setApellido(String apellido) {
         this.apellido = apellido;
     }
-
-    public float getCalificacion() {
-        return this.calificacion;
-    }
-
-    public void setCalificacion(float calificacion) {
-        this.calificacion = calificacion;
-    }
-    
 }
